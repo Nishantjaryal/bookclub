@@ -27,7 +27,6 @@ const Pros = () => {
            </p>
          </div>
          ))}
-             {/*  hgkhygygggg  iu*/}
         </div>
       </div>
     </section>
