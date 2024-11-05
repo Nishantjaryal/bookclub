@@ -12,7 +12,7 @@ const Why = () => {
           <h1 className=" leading-[45px] text-[40px] font-serif flex-center my-font font-semibold">
             {why.heading}
           </h1>
-            <ul className="p-5">
+            <ul className="flex flex-col p-5 gap-1">
                  {
             why.points.map((point,id)=>(
                 <li key={id} className="list-disc text-lg sans-light ">{point}</li>

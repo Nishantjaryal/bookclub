@@ -13,6 +13,10 @@ const config: Config = {
         secondary: '#221F66',
         super: '#5049E3',
         duper: '#959DF6',
+        warning:'#D8315B',
+        completed:"#2D6CFF",
+        checked:"#22FF00",
+        testing:"#FF9100"
       },
     },
   },

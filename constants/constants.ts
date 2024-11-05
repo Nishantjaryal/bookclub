@@ -1,6 +1,8 @@
 
 // ---------------------------------------------------------- HOMEPAGE ----------------------------------------------------------
 
+
+
 // First section Data source
 
 export const homepage = {
@@ -9,10 +11,12 @@ export const homepage = {
   description: "Founded on books. Magnified with technology. Tailored for You.",
   buttonText1: "Explore",
   buttonText2: "Participation",
-  buttonLink1: "/",
-  buttonLink2: "/",
+  buttonLink1: "/resources",
+  buttonLink2: "/membership",
   image: "/assets/cover.png",
 };
+
+
 
 
 // Why section Data source
@@ -82,11 +86,11 @@ export const quotes = [
     author: "Neil Gaiman"
   },
   {
-    quote: "In the end, we’ll all become stories.",
+    quote: "In the end, we’ll all become stories",
     author: "Margaret Atwood"
   },
   {
-    quote: "Books were safer than other people anyway.",
+    quote: "Books were safer than other people anyway",
     author: "Neil Gaiman"
   },
   {
@@ -111,6 +115,8 @@ export const quotes = [
   }
 ]
 
+// Pros of bookClub
+
 export const pros = {
   heading:"Learning from books can be simple, snappy, and successful.",
   image:"/assets/bgbooks2.png",
@@ -121,7 +127,7 @@ export const pros = {
     },
     {
       img:"/assets/ico1.svg",
-      text:"The Micro-lessons are easily digestible and helps Learning capabilities."
+      text:"The Micro-lessons are easily digestible and Improve Learning capabilities."
     },
     {
       img:"/assets/ico2.svg",
@@ -129,5 +135,94 @@ export const pros = {
     }
   ],
 
-  
+}
+
+
+// convertSheet
+
+export const convertSheet = {
+  title:"Books are the greatest resource of knowledge. Capturing their magic as a team has been futile",
+  buttonText1: "Explore",
+buttonText2: "Participation",
+buttonLink1: "/resources",
+buttonLink2: "/membership",
+
+}
+
+
+
+
+
+
+// ---------------------------------------------------------- BLOG PAGE ----------------------------------------------------------
+
+export const blogSheet = {
+  heading: "Blog Scape",
+  description: "The Blog Scape is a hub for book enthusiasts, offering thoughtful discussions on literature, reading experiences, and author insights.",
+  posts:[
+    {
+      type:"pdf", // docs || post || link || pdf || news || media || zip
+      heading:"Top 10 Benefits of Reading",
+      description:"Everything you read fills your head with new bits of information, and you never know when it might come in handy. Books makes us better-equipped to tackle any challenge in life",
+      link:"https://www.crawshawacademy.org.uk/seecmsfile/?id=165",
+      image:"/assets/avatar/ava7-min.png",
+      author:"Crawshaw",
+      authorLink:"https://www.crawshawacademy.org.uk/",
+      state:"completed" // completed || testing || checked || warning
+
+    }
+  ]
+}
+
+
+// ---------------------------------------------------------- RESOURCES ----------------------------------------------------------
+
+
+export const resourcesData = {
+  heading: "Bookscape Resource Sheet",
+  description: "Here at BookScape we focus on Teachings of books by dicussion and quizes that helps unlock a new dimension of self development and growth.",
+  posts:[
+    {
+      heading:"Book Benefits",
+      state: "pdf", // docs || post || link || pdf || news || media || zip
+      description:"Reading books may have several physical and mental benefits. These include strengthening your brain, increasing your ability to empathize",
+      link:"https://www.crawshawacademy.org.uk/seecmsfile/?id=165"
+    }
+  ]
+}
+
+// ---------------------------------------------------------- CONTACT ----------------------------------------------------------
+
+
+export const contactHeaders = {
+  heading:"Contact Us",
+  description:" Want to send feedback about a BookClub? Need details about our Upcoming Schedule plan? Let us know",
+}
+
+
+// ---------------------------------------------------------- FAQ ----------------------------------------------------------
+
+export const FAQs = {
+  list : [
+    {
+      "arguments": "Enhances Knowledge and Vocabulary",
+      "fact": "Studies show that reading expands one's vocabulary and exposes the reader to new words and concepts, which improves both spoken and written communication skills."
+    },
+    {
+      "arguments": "Improves Focus and Concentration",
+      "fact": "In contrast to the quick consumption of digital content, reading books requires sustained focus, which trains the brain to concentrate on tasks for longer periods of time."
+    },
+    {
+      "arguments": "Boosts Mental Health and Reduces Stress",
+      "fact": "According to a study by the University of Sussex, reading can reduce stress by up to 68%, as it allows the reader to relax and escape from daily pressures."
+    },
+    {
+      "arguments": "Enhances Imagination and Creativity",
+      "fact": "When reading, the brain actively constructs scenes, interprets characters, and creates visual images. This imaginative engagement boosts creative thinking and problem-solving skills."
+    },
+    {
+      "arguments": "Strengthens Memory and Analytical Thinking",
+      "fact": "Following a narrative requires remembering plot points, character backgrounds, and events. This mental activity strengthens memory retention and can improve analytical skills when readers make connections between plot elements."
+    }
+  ],
 }
