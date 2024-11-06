@@ -1,24 +1,23 @@
 "use client";
 
-import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
+import MobileNav from "./mobileNav";
 
 const Nav = () => {
-
-  useEffect(()=>{
+  useEffect(() => {
     window.addEventListener("scroll", function () {
       const Nav = document.getElementById("navbar");
       Nav?.classList.toggle("top-[-15%]", window.scrollY > 100);
     });
-  },[])
-  
+  }, []);
 
   return (
     <nav
       id="navbar"
-      className="flex-center gap-7 bg-white fixed top-0 left-0 w-full shadow-md  duration-300	z-20"
+      className="flex  items-center sm:flex-center justify-between bg-white fixed top-0 left-0 w-full shadow-md  duration-300	z-20"
     >
       <div className="px-5 py-3">
         <Link href="/">
@@ -30,7 +29,7 @@ const Nav = () => {
           />
         </Link>
       </div>
-      <div className=" flex justify-between items-center text-md text-gray-800 transition-all w-[70%]">
+      <div className=" flex justify-between items-center text-md text-gray-800 transition-all w-[70%] max-sm:hidden">
         <span className="flex-center p-4  gap-7">
           <Link className="hover:text-black" href="/blog">
             Blog
@@ -47,6 +46,16 @@ const Nav = () => {
         </span>
 
         <span className="flex-center p-4 gap-4 ">
+        <div className="text-primary mx-4 font-normal" >
+          <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+        </div>
+        
+
           <Link href="/membership">
             <span className="flex-center gap-2 px-6 py-2 color-button rounded-full cursor-pointer">
               <svg
@@ -78,13 +87,14 @@ const Nav = () => {
               Contribute
             </span>
           </Link>
-          <SignedOut>
-              <SignInButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
+
+            
         </span>
+      </div>
+
+      {/* mobile */}
+      <div className="flex flex-col gap-5 p-2">
+        <MobileNav />
       </div>
     </nav>
   );

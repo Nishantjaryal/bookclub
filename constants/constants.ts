@@ -10,7 +10,7 @@ export const homepage = {
     "The Most Empowering, Effective and Easy Leadership Development Tool",
   description: "Founded on books. Magnified with technology. Tailored for You.",
   buttonText1: "Explore",
-  buttonText2: "Participation",
+  buttonText2: "Participate",
   buttonLink1: "/resources",
   buttonLink2: "/membership",
   image: "/assets/cover.png",

@@ -32,9 +32,12 @@ export default function RootLayout({
 
 
   return (
+    <html lang="en">
 
     <ClerkProvider>
-    <html lang="en">
+    <head>
+			<link rel='icon' href='/assets/fav.png' />
+		</head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
@@ -44,7 +47,8 @@ export default function RootLayout({
         <Footer />
 
       </body>
-    </html>
     </ClerkProvider>
+
+    </html>
   );
 }
