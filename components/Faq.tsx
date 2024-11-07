@@ -24,7 +24,7 @@ const Faq = () => {
                <span className="inline-block rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800   md:mb-0"> Facts </span>
              </div>
  
-             <a href="#" className="text-xl font-semibold text-gray-900 hover:underline ">“{faq.arguments}”</a>
+             <div  className="text-xl font-semibold text-gray-900 hover:underline ">“{faq.arguments}”</div>
              <p>{faq.fact}</p>
            </div>
          ))}
