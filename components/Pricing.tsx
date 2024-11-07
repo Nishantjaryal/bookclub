@@ -17,7 +17,7 @@ const Pricing = () => {
         alt='payment page'
         width={600}
         height={350}
-        
+        className='max-lg:hidden'
         />
           <div className="flex flex-col p-6  max-w-[370px] text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow mx-0 xl:p-8  ">
               <h3 className="mb-4 text-2xl font-semibold">Starter</h3>

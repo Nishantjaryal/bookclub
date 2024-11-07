@@ -19,41 +19,49 @@ const MobileNav = () => {
             width={35}
             height={35}
             alt="hamburger menu icon"
-            className="cursor-pointer sm:hidden"
+            className="cursor-pointer lg:hidden"
           />
         </SheetTrigger>
         <SheetContent>
-          <Link href="/">
-            <Image
-              src="/assets/logo.png"
-              alt="BookClub"
-              width={150}
-              height={100}
-              className="mb-5"
-            />
-          </Link>
-
           <SheetClose asChild>
-            <div>
-            <div className=" flex flex-col text-md text-gray-800 transition-all w-[70%] sm:hidden">
-              <span className="flex flex-col p-4  gap-7">
+            <Link href="/">
+              <Image
+                src="/assets/logo.png"
+                alt="BookClub"
+                width={150}
+                height={100}
+                className="mb-5"
+              />{" "}
+            </Link>
+          </SheetClose>
+
+          <div>
+            <div className=" flex flex-col text-md text-gray-800 transition-all w-[70%]  p-4  gap-7 lg:hidden">
+              <SheetClose asChild>
                 <Link className="hover:text-black" href="/blog">
                   Blog
                 </Link>
+              </SheetClose>
+
+              <SheetClose asChild>
                 <Link className="hover:text-black" href="/resources">
                   Resourses
                 </Link>
+              </SheetClose>
+              <SheetClose asChild>
                 <Link className="hover:text-black" href="/contact">
                   Contact
                 </Link>
+              </SheetClose>
+              <SheetClose asChild>
                 <Link className="hover:text-black" href="/faq">
                   FAQ
                 </Link>
-              </span>
+              </SheetClose>
 
-              <span className="flex flex-col p-4 gap-4 min-w-[100px] ">
+              <SheetClose asChild>
                 <Link href="/membership">
-                  <span className="flex-center gap-2 px-6 py-2 color-button rounded-full cursor-pointer">
+                  <span className="min-w-[100px]  flex-center gap-2 px-6 py-2 color-button rounded-full cursor-pointer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="24px"
@@ -66,12 +74,14 @@ const MobileNav = () => {
                     Join
                   </span>
                 </Link>
+              </SheetClose>
 
+              <SheetClose asChild>
                 <Link
                   target="_blank"
                   href="https://github.com/Nishantjaryal/bookclub"
                 >
-                  <span className="flex-center gap-2 px-6 py-2 light-button rounded-full cursor-pointer min-w-[150px] ">
+                  <span className="min-w-[100px]  flex-center gap-2 px-6 py-2 light-button rounded-full cursor-pointer min-w-[150px] ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="24px"
@@ -85,20 +95,17 @@ const MobileNav = () => {
                     Contribute
                   </span>
                 </Link>
-              </span>
-              </div>
-              <div className=" mt-auto p-4 text-primary font-semibold">
-
+              </SheetClose>
+            </div>
+            <div className=" mt-auto p-4 text-primary font-semibold">
               <SignedOut>
                 <SignInButton />
               </SignedOut>
               <SignedIn>
                 <UserButton />
               </SignedIn>
-
-              </div>
             </div>
-          </SheetClose>
+          </div>
         </SheetContent>
       </Sheet>
     </section>

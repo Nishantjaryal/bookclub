@@ -17,7 +17,7 @@ const Nav = () => {
   return (
     <nav
       id="navbar"
-      className="flex  items-center sm:flex-center justify-between bg-white fixed top-0 left-0 w-full shadow-md  duration-300	z-20"
+      className="flex  items-center lg:flex-center justify-between bg-white fixed top-0 left-0 w-full shadow-md  duration-300	z-20"
     >
       <div className="px-5 py-3">
         <Link href="/">
@@ -29,7 +29,7 @@ const Nav = () => {
           />
         </Link>
       </div>
-      <div className=" flex justify-between items-center text-md text-gray-800 transition-all w-[70%] max-sm:hidden">
+      <div className=" flex justify-between items-center text-md text-gray-800 transition-all w-[70%] max-lg:hidden">
         <span className="flex-center p-4  gap-7">
           <Link className="hover:text-black" href="/blog">
             Blog
@@ -46,7 +46,7 @@ const Nav = () => {
         </span>
 
         <span className="flex-center p-4 gap-4 ">
-        <div className="text-primary mx-4 font-normal" >
+        <div className="text-primary mx-2 font-normal w-[50px]" >
           <SignedOut>
               <SignInButton />
             </SignedOut>

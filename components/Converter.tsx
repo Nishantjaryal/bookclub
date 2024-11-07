@@ -4,8 +4,8 @@ import Link from 'next/link'
 const Converter = () => {
   return (
     <div className='py-20 text-white bg-gradient-to-r from-primary to-secondary flex-center flex-col gap-5'>
-      <h1 className='text-5xl my-font font-medium w-[50%] leading-[50px] '>{convertSheet.title}</h1>
-      <div className=" flex gap-5 pt-3  w-[50%] ">
+      <h1 className='text-5xl my-font font-medium w-[50%] leading-[50px] max-md:text-[35px] max-md:leading-[40px]  max-md:w-[70%] '>{convertSheet.title}</h1>
+      <div className=" flex gap-5 pt-3  w-[50%] max-md:flex-col max-md:w-[70%] ">
             <Link href={convertSheet.buttonLink1}>
               <button className="flex gap-2 px-5 py-3 bg-white text-primary rounded-md hover:bg-slate-100">
                 <svg
