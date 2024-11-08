@@ -16,7 +16,7 @@ const Advantages = () => {
               <img
                 className="h-auto max-h-full w-full "
                 src="/assets/book.png"
-                alt="imac image"
+                alt="book image"
               />
              
             </a>

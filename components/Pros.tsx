@@ -7,7 +7,7 @@ const Pros = () => {
     <div>
       <section className="text-gray-600 body-font flex-center">
         <div className="w-[50%] flex-center max-lg:hidden">
-          <img src={pros.image} alt="books" />
+          <img src={pros.image} alt="books" className="max-lg:hidden" />
         </div>
         <div className="w-[50%] flex flex-col gap-8 max-lg:flex-center max-lg:w-[80%]">
           <h1 className="w-[80%] my-font text-super text-5xl font-semibold leading-[50px] max-md:text-3xl max-md:font-normal ">

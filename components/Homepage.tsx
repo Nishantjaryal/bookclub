@@ -50,7 +50,7 @@ export default function Home() {
         </div>
       </div>
       <div className="max-lg:hidden w-[100%] lg:w-[42%] ">
-        <img alt="books" src={homepage.image} className="w-[100%]" />
+        <img alt="books" src={homepage.image} className="max-lg:hidden w-[100%]" />
       </div>
     </div>
   );

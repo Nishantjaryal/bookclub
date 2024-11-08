@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section className=" flex-center bg-white gap-6 border-y-2 py-20 w-full">
       <div className="w-[40%] flex-center max-lg:hidden">
-        <img src="/assets/contact.webp" alt="contact us" />
+        <img className="max-lg:hidden" src="/assets/contact.webp" alt="contact us" />
       </div>
       <div className="  max-md:w-[80%] py-8 lg:py-10 px-4 w-[40%] max-w-screen-md">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">

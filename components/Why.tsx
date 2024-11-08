@@ -4,7 +4,7 @@ const Why = () => {
   return (
     <div className=" max-md:py-20 lg:h-screen w-full bg-white flex justify-between items-center overflow-hidden">
       <div className=" max-lg:hidden md:w-[50%] ">
-        <img src={why.image} />
+        <img src={why.image} className="max-lg:hidden" />
       </div>
 
       <div className="w-[100%] lg:w-[50%] flex-center max-lg:py-10 ">
