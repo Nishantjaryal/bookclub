@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="lg:h-screen w-full bg-gradient-to-r from-primary to-secondary flex gap-6 justify-between items-center overflow-hidden max-lg:flex-col max-lg:py-20">
       <div className="  w-[90%] md:w-[80%] text-white flex-center pt-24 lg:w-[55%]  ">
-        <div className="w-[80%] flex flex-col gap-5">
+        <div className="md:w-[80%] flex flex-col gap-5 max-md:gap-4">
           <h1 className=" text-[35px] leading-[1.1] md:text-[55px] font-serif flex-center font-[500] my-font ">
             {homepage.heading}
           </h1>
@@ -15,7 +15,7 @@ export default function Home() {
 
           <div className=" flex gap-5 pt-3 max-md:flex-col-reverse ">
             <Link href={homepage.buttonLink1}>
-              <button className="flex gap-2 px-3 py-2 md:px-5 md:py-3 bg-white text-primary rounded-md hover:bg-slate-100">
+              <button className="flex gap-2 px-3.5 py-2.5 md:px-5 md:py-3 bg-white text-primary rounded-md hover:bg-slate-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -30,7 +30,7 @@ export default function Home() {
             </Link>
 
             <Link href={homepage.buttonLink2}>
-              <button className="flex gap-2 px-3 py-2 md:px-5 md:py-3 bg-primary border-[1px] border-white text-white rounded-md hover:bg-[#4c44e359]">
+              <button className="flex gap-2 px-3.5 py-2.5 md:px-5 md:py-3 bg-primary border-[1px] border-white text-white rounded-md hover:bg-[#4c44e359]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
