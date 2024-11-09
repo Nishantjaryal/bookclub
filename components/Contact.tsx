@@ -14,16 +14,13 @@ const Contact = () => {
         />
       </div>
       <div className="max-md:w-[80%] py-8 lg:py-10 px-4 w-[40%] max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">
+        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">
           {contactHeaders.heading}
         </h2>
         <p className="mb-8 lg:mb-10 font-light text-center text-gray-500 sm:text-xl">
           {contactHeaders.description}
         </p>
-        <form
-          name="contact"
-        >
-
+        <form>
           <div>
             <label
               htmlFor="email"
