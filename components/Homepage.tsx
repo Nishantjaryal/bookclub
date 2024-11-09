@@ -3,7 +3,7 @@ import { homepage } from "@/constants/constants";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="lg:h-screen w-full bg-gradient-to-r from-primary to-secondary flex gap-6 justify-between items-center overflow-hidden max-lg:flex-col  max-lg:py-20  max-sm:pb-0 ">
+    <div className="lg:h-screen w-full bg-gradient-to-r from-primary to-secondary flex gap-6 justify-between items-center overflow-hidden max-lg:flex-col  max-lg:py-14  max-sm:pb-0 ">
       <div className="  w-[90%] md:w-[80%] text-white flex-center pt-24 lg:w-[55%]  ">
         <div className=" w-[90%] sm:w-[80%] flex flex-col gap-5 max-md:gap-4">
           <h1 className=" text-[35px] leading-[1.1] md:text-[55px] font-serif flex-center font-[500] my-font ">
@@ -52,7 +52,7 @@ export default function Home() {
       <div className="max-lg:hidden w-[100%] lg:w-[42%] ">
         <img alt="books" src={homepage.image} className="max-lg:hidden w-[100%]" />
       </div>
-      <div className="w-full sm:hidden mt-7">
+      <div className="w-full sm:hidden mt-10">
         <img src="/assets/mobcover.webp" className="w-full sm:hidden"></img>
       </div>
     </div>
