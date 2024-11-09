@@ -2,12 +2,14 @@ import React from "react";
 import { why } from "@/constants/constants";
 const Why = () => {
   return (
-    <div className=" max-md:py-20 lg:h-screen w-full bg-white flex justify-between items-center overflow-hidden">
-      <div className=" max-lg:hidden md:w-[50%] ">
+    <div className="  lg:h-screen w-full bg-white flex justify-between items-center overflow-hidden">
+
+     
+      <div className=" max-lg:hidden lg:w-[50%] ">
         <img src={why.image} className="max-lg:hidden" />
       </div>
 
-      <div className="w-[100%] lg:w-[50%] flex-center max-lg:py-10 ">
+      <div className="w-[100%] lg:w-[50%]  flex-center max-lg:py-20 ">
         <div className=" md:w-[60%] flex-center flex-col gap-5 max-md:gap-10 text-primary">
           <h1 className="text-[30px] leading-[35px] md:leading-[45px] md:text-[40px] font-serif flex-center my-font max-md:w-[80%] md:font-semibold">
             {why.heading}
