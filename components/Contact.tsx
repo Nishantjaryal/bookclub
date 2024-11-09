@@ -15,7 +15,7 @@ const Contact = () => {
         <p className="mb-8 lg:mb-10 font-light text-center text-gray-500  sm:text-xl">
           {contactHeaders.description}
         </p>
-        <form action="post" data-netlify="true" className="space-y-6">
+        <form name="contact" method="POST" action="/" data-netlify="true" className="space-y-6">
           <div>
             <label
               htmlFor="email"
