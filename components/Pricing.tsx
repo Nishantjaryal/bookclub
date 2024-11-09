@@ -5,7 +5,7 @@ import React from 'react'
 const Pricing = () => {
   return (
     <section className="bg-white py-20">
-  <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+  <div className="py-10 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Designed for Readers </h2>
           <p className="mb-5 font-light text-gray-500 text-[14px] sm:text-xl ">Here at BookScape we focus on efficient distribution of Reading Resources to fuel Personal Growth</p>
@@ -19,7 +19,7 @@ const Pricing = () => {
         height={350}
         className='max-lg:hidden'
         />
-          <div className="flex flex-col p-6  max-w-[370px] text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow mx-0 xl:p-8  ">
+          <div className="flex flex-col p-6  max-w-[370px] text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-md mx-0 xl:p-8  ">
               <h3 className="mb-4 text-2xl font-semibold">Book Family</h3>
               <p className="font-light text-gray-500 sm:text-lg ">Best option for Getting Books, Research Papers, Short Stories and Blogs</p>
               <div className="flex justify-center items-baseline my-8">
