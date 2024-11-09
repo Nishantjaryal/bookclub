@@ -34,7 +34,13 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-    <ClerkProvider>
+    <ClerkProvider
+    appearance={{
+      layout: {
+        unsafe_disableDevelopmentModeWarnings: true,
+      },
+    }}
+    >
     <head>
 			<link rel='icon' href='/assets/fav.png' />
 		</head>

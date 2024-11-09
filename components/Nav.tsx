@@ -47,7 +47,7 @@ const Nav = () => {
         </span>
 
         <span className="flex-center p-4 gap-4 ">
-        <div className="text-primary mx-2 font-normal w-[50px]" >
+        <div className="text-primary mx-2 font-normal w-[50px] flex-center scale-[1.4] " >
           <SignedOut>
               <SignInButton />
             </SignedOut>
