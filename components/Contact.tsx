@@ -1,8 +1,38 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import { contactHeaders } from "@/constants/constants";
 import Link from "next/link";
 
 const Contact = () => {
+
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Send the form data to Netlify
+    const response = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    });
+
+    if (response.ok) {
+      setStatus('Form submitted successfully!');
+    } else {
+      setStatus('Submission failed, please try again.');
+    }
+  };
+
+
   return (
     <section className=" flex-center bg-white gap-6 border-y-2 py-20 w-full">
       <div className="w-[40%] flex-center max-lg:hidden">
@@ -15,7 +45,17 @@ const Contact = () => {
         <p className="mb-8 lg:mb-10 font-light text-center text-gray-500  sm:text-xl">
           {contactHeaders.description}
         </p>
-        <form  className="space-y-6">
+        <form
+        name="contact"
+        method="POST"
+        action="/"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+        netlify-honeypot="bot-field" // Adds a honeypot field to reduce spam
+      >
+            {/* Required for Netlify to process the form */}
+            <input type="hidden" name="form-name" value="contact" />
+
           <div>
             <label
               htmlFor="email"
@@ -26,8 +66,9 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+              className=" mb-5 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
               placeholder="name@example.com"
+              onChange={handleChange} 
               required
             />
           </div>
@@ -41,8 +82,9 @@ const Contact = () => {
             <input
               type="text"
               id="subject"
-              className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 "
+              className="block p-3 w-full text-sm text-gray-900 mb-5 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 "
               placeholder="Let us know how we can help you"
+              onChange={handleChange} 
               required
             />
           </div>
@@ -56,8 +98,9 @@ const Contact = () => {
             <textarea
               id="message"
               rows={5}
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+              className=" mb-5 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
               placeholder="Leave a comment..."
+              onChange={handleChange} 
             ></textarea>
           </div>
           <div className="flex items-baseline gap-6">
@@ -69,6 +112,8 @@ const Contact = () => {
           </button>
           <Link target="_blank" className="text-primary underline-offset-4  hover:underline" href="mailto:nishantjaryal24@gmail.com">Mail Us</Link>
           </div>
+          <p>{status}</p>
+
           
         </form>
       </div>
