@@ -17,7 +17,7 @@ const Nav = () => {
   return (
     <nav
       id="navbar"
-      className="flex  items-center lg:flex-center justify-between bg-white fixed top-0 left-0 w-full shadow-md  duration-300	z-20 h-[80px] "
+      className="flex  items-center lg:flex-center justify-between bg-white fixed top-0 left-0 w-full shadow-md  duration-300	z-20 h-[80px] md:h-[84px] "
     >
       <div className="px-5 py-3">
         <Link href="/">
