@@ -4,18 +4,17 @@ import { contactHeaders } from "@/constants/constants";
 import Link from "next/link";
 
 const Contact = () => {
-
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Send the form data to Netlify
@@ -55,7 +54,7 @@ const Contact = () => {
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>
-              Don’t fill this out if you're human: <input name="bot-field" onChange={handleChange} />
+              Don&apos;t fill this out if you&apos;re human: <input name="bot-field" onChange={handleChange} />
             </label>
           </p>
 
@@ -66,7 +65,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              name="email" // Add the name attribute
+              name="email"
               className="mb-5 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
               placeholder="name@example.com"
               onChange={handleChange}
@@ -80,7 +79,7 @@ const Contact = () => {
             <input
               type="text"
               id="subject"
-              name="subject" // Add the name attribute
+              name="subject"
               className="block p-3 w-full text-sm text-gray-900 mb-5 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
               placeholder="Let us know how we can help you"
               onChange={handleChange}
@@ -93,7 +92,7 @@ const Contact = () => {
             </label>
             <textarea
               id="message"
-              name="message" // Add the name attribute
+              name="message"
               rows={5}
               className="mb-5 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Leave a comment..."
