@@ -13,7 +13,7 @@ const resources = () => {
     
       <div className="max-w-screen-md mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">{resourcesData.heading}</h2>
-          <p className="text-gray-500 sm:text-xl">{resourcesData.description}</p>
+          <p className="text-gray-500 sm:text-xl text-[14px] md:text-[16px]">{resourcesData.description}</p>
       </div>
       <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
           {
@@ -36,7 +36,7 @@ const resources = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-426.66q0-27 19.83-46.84Q119.67-640 146.67-640h666.66q27 0 46.84 19.83Q880-600.33 880-573.33v426.66q0 27-19.83 46.84Q840.33-80 813.33-80H146.67Zm0-66.67h666.66v-426.66H146.67v426.66Zm258-60.66L632-360 404.67-512v304.67Zm-252-486V-760h654.66v66.67H152.67Zm127.33-120V-880h400v66.67H280ZM146.67-146.67v-426.66 426.66Z"/></svg>                )}
               </div>
               <h3 className="mb-2 text-xl font-bold">{post.heading}</h3>
-              <p className="text-gray-500 mb-2">{post.description}</p>
+              <p className="text-gray-500 mb-2 text-[14px] md:text-[16px] ">{post.description}</p>
               <Link href={post.link} target='_blank' className='text-primary underline-offset-4  hover:underline font-semibold flex-center gap-1 w-[100px]'>  <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="23px" fill="#625CD9"><path d="m98-537 168-168q14-14 33-20t39-2l68.67 13Q352-651.33 319-597t-62 128.33L98-537Zm203 89.67q25.67-72.67 66.17-137Q407.67-648.67 461-702q88-88 201-131.5T873-860q17 98-26 211T716-448q-53 53-118 93.83-65 40.84-137.67 66.5L301-447.33Zm282.67-123.34q21 21 51.83 21t51.83-21q21-21 21-51.83t-21-51.83q-21-21-51.83-21t-51.83 21q-21 21-21 51.83t21 51.83ZM551-85l-69.33-159q74-29 128.5-62t117.16-87.67L740-325q4 20-2 39.5T718-252L551-85ZM162-318q35-35 85-35.5t85 34.5q35 35 35 85t-35 85q-25.67 25.67-81.83 43Q194-88.67 87-74q14.67-107 32-162.67 17.33-55.66 43-81.33Z"/></svg> Take me </Link>
           </div>
             ))

@@ -11,7 +11,7 @@ const Blog = () => {
           <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900">
             {blogSheet.heading}
           </h2>
-          <p className="font-light text-gray-500 sm:text-xl">
+          <p className="font-light text-[14px] text-gray-500 sm:text-xl">
             {blogSheet.description}
           </p>
         </div>
@@ -109,7 +109,7 @@ const Blog = () => {
               <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                 <a href="#">{post.heading}</a>
               </h2>
-              <p className="mb-5 font-light text-gray-500 ">
+              <p className="mb-5 text-[14px] md:text-[16px] font-light text-gray-500 ">
                 {post.description}
               </p>
               <div className="flex justify-between items-center">

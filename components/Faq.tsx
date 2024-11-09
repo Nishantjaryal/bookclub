@@ -25,7 +25,7 @@ const Faq = () => {
              </div>
  
              <div  className="text-xl font-semibold text-gray-900 hover:underline ">“{faq.arguments}”</div>
-             <p>{faq.fact}</p>
+             <p className='text-[14px] md:text-[16px]'>{faq.fact}</p>
            </div>
          ))}
          
