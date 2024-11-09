@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { contactHeaders } from "@/constants/constants";
-import Link from "next/link";
 
 const Contact = () => {
   return (
