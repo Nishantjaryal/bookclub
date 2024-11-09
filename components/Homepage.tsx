@@ -3,7 +3,7 @@ import { homepage } from "@/constants/constants";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="lg:h-screen w-full bg-gradient-to-r from-primary to-secondary flex gap-6 justify-between items-center overflow-hidden max-lg:flex-col max-lg:py-20">
+    <div className="lg:h-screen w-full bg-gradient-to-r from-primary to-secondary flex gap-6 justify-between items-center overflow-hidden max-lg:flex-col max-lg:py-20 max-sm:pb-32">
       <div className="  w-[90%] md:w-[80%] text-white flex-center pt-24 lg:w-[55%]  ">
         <div className=" w-[90%] sm:w-[80%] flex flex-col gap-5 max-md:gap-4">
           <h1 className=" text-[35px] leading-[1.1] md:text-[55px] font-serif flex-center font-[500] my-font ">

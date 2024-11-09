@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const resources = () => {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20 min-h-screen">
   <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
 
         {/* <Down /> */}
