@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { pros } from "@/constants/constants";
 
@@ -16,7 +15,7 @@ const Pros = () => {
           <div className=" flex flex-col gap-6 w-full max-lg:flex-center max-lg:w-[80%] ">
             {pros.points.map((point, index) => (
               <div key={index} className="flex gap-4 text-super max-md:flex-col max-md:w-[100%]">
-                <Image src={point.img} alt="Bookclub" width={50} height={50} />
+                <img src={point.img} alt="Bookclub" width={50} height={50} />
                 <p className="w-[60%] max-md:w-[100%] text-[20px] max-md:text-[17px] leading-[30px] max-md:leading-[24px]">
                   {point.text}
                 </p>

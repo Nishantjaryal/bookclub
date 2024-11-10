@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { quotes } from "@/constants/constants";
-import Image from "next/image";
 
 function getNo() {
   return Math.floor(Math.random() * quotes.length);
@@ -42,7 +41,7 @@ const Quotes = () => {
           </h2>
         </div>
       </div>
-      <Image src="/assets/chat.png" alt="quotes" className="absolute bottom-10 left-10 max-md:hidden" width={100} height={100} />
+      <img src="/assets/chat.png" alt="quotes" className="absolute bottom-10 left-10 max-md:hidden" width={100} height={100} />
     </section>
   );
 };

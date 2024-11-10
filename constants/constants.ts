@@ -165,7 +165,7 @@ export const blogSheet = {
       heading:"Top 10 Benefits of Reading",
       description:"Everything you read fills your head with new bits of information, and you never know when it might come in handy. Books makes us better-equipped to tackle any challenge in life",
       link:"https://www.crawshawacademy.org.uk/seecmsfile/?id=165",
-      image:"/assets/avatar/ava7-min.png",
+      image:"/assets/avatar/ava6-min.png",
       author:"Crawshaw",
       authorLink:"https://www.crawshawacademy.org.uk/",
       state:"completed" // completed || testing || checked || warning

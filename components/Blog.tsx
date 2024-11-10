@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { blogSheet } from "@/constants/constants";
 import Link from "next/link";
@@ -116,10 +115,8 @@ const Blog = () => {
                 <Link href={post.authorLink} target="_blank">
                 
                   <div className="flex items-center space-x-3">
-                    <Image
-                      width={40}
-                      height={40}
-                      className="rounded-full"
+                    <img
+                      className="rounded-full w-[40px] h-[40px]"
                       src={post.image}
                       alt="author"
                     />

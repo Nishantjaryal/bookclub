@@ -4,7 +4,6 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import Image from "next/image";
 import Link from "next/link";
 
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
@@ -14,24 +13,22 @@ const MobileNav = () => {
     <section className="w-full flex flex-col">
       <Sheet>
         <SheetTrigger asChild>
-          <Image
-            src="/assets/hamburger.svg"
-            width={35}
-            height={35}
+          <img
+            src="/assets/hamburger.svg "
             alt="hamburger menu icon"
-            className="cursor-pointer lg:hidden"
+            className="cursor-pointer w-[35px] h-[35px] lg:hidden"
           />
         </SheetTrigger>
         <SheetContent>
           <SheetClose asChild>
             <Link href="/">
-              <Image
-                src="/assets/logo.png"
-                alt="BookClub"
-                width={150}
-                height={100}
-                className="mb-5"
-              />{" "}
+            <img
+            src="/assets/logo.png"
+            alt="BookClub"
+            width={150}
+            height={100}
+            fetchPriority="high"
+          />{" "}
             </Link>
           </SheetClose>
 

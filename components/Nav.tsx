@@ -1,7 +1,6 @@
 "use client";
 
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import MobileNav from "./mobileNav";
@@ -21,12 +20,12 @@ const Nav = () => {
     >
       <div className="px-5 py-3">
         <Link href="/">
-          <Image
+          <img
             src="/assets/logo.png"
             alt="BookClub"
             width={150}
             height={100}
-            priority={true}
+            fetchPriority="high"
           />
         </Link>
       </div>

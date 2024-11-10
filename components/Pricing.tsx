@@ -1,10 +1,9 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Pricing = () => {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20 bg-blue-50">
   <div className="py-10 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Designed for Readers </h2>
@@ -12,7 +11,7 @@ const Pricing = () => {
       </div>
       <div className="space-y-8 flex-center flex-wrap  lg:space-y-0 gap-0">
         
-        <Image 
+        <img 
         src='/assets/pay-min.webp'
         alt='payment page'
         width={600}
