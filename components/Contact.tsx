@@ -1,4 +1,6 @@
+
 "use client";
+
 import React from "react";
 import { contactHeaders } from "@/constants/constants";
 import Link from "next/link";
@@ -20,7 +22,7 @@ const Contact = () => {
         <p className="mb-8 lg:mb-10 font-light text-center text-gray-500 sm:text-xl">
           {contactHeaders.description}
         </p>
-        <form>
+        <form name="contact" method="post" data-netlify="true">
           <div>
             <label
               htmlFor="email"
@@ -76,15 +78,18 @@ const Contact = () => {
             >
               Send message
             </button>
-            <Link
-              target="_blank"
-              className="text-primary underline-offset-4 hover:underline"
-              href="mailto:nishantjaryal24@gmail.com"
-            >
-              Mail Us
-            </Link>
           </div>
         </form>
+        <div className="mt-5">
+          <Link
+          target="_blank"
+          className="text-primary underline-offset-4 hover:underline"
+          href="mailto:nishantjaryal24@gmail.com"
+        >
+          Mail Us
+        </Link>
+        </div>
+        
       </div>
     </section>
   );
