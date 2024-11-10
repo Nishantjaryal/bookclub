@@ -10,7 +10,7 @@ const Nav = () => {
   useEffect(() => {
     window.addEventListener("scroll", function () {
       const Nav = document.getElementById("navbar");
-      Nav?.classList.toggle("top-[-15%]", window.scrollY > 100);
+      Nav?.classList.toggle("top-[-15%]", window.scrollY >  100);
     });
   }, []);
 
