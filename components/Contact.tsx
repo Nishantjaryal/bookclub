@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { contactHeaders } from "@/constants/constants";
-import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -13,7 +12,7 @@ const Contact = () => {
           alt="contact us"
         />
       </div>
-      <div className="max-md:w-[80%] py-8 lg:py-10 px-4 w-[40%] max-w-screen-md">
+      {/* <div className="max-md:w-[80%] py-8 lg:py-10 px-4 w-[40%] max-w-screen-md">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">
           {contactHeaders.heading}
         </h2>
@@ -85,6 +84,29 @@ const Contact = () => {
             </Link>
           </div>
         </form>
+      </div> */}
+
+      <div className="max-md:w-[80%] py-8 lg:py-10 px-4 w-[40%] max-w-screen-md flex-center flex-col">
+
+      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">
+          {contactHeaders.heading}
+        </h2>
+        <p className="mb-8 lg:mb-10 font-light text-center text-gray-500 sm:text-xl">
+          {contactHeaders.description}
+        </p>
+        <div className="flex flex-col p-3 items-center bg-white border border-gray-200 rounded-lg shadow-md md:flex-row w-[90%] md:max-w-xl ">
+        <img src='/assets/nsqr.jpg' className="w-[180px]" />
+        <div className="flex flex-col justify-between p-4 leading-normal">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+          Nishant Jaryal
+          </h5>
+          <p className="mb-3 font-normal text-gray-700 ">
+          Ping a message on WhatsApp, So we can a manual check and Add you in official chat for further club notifications 
+          </p>
+
+        </div>
+      </div>
+
       </div>
     </section>
   );
