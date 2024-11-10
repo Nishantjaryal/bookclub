@@ -14,6 +14,7 @@ export const homepage = {
   buttonLink1: "/resources",
   buttonLink2: "/membership",
   image: "/assets/cover.png",
+  mobImage: "/assets/mobcover.webp"
 };
 
 

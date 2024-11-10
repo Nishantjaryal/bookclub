@@ -53,7 +53,7 @@ export default function Home() {
         <img alt="books" src={homepage.image} className="max-lg:hidden w-[100%]" />
       </div>
       <div className="w-full sm:hidden mt-10">
-        <img src="/assets/mobcover.webp" className="w-full sm:hidden"></img>
+        <img src={homepage.mobImage} className="w-full sm:hidden"></img>
       </div>
     </div>
   );
