@@ -10,8 +10,7 @@ const page = () => {
             Nishant Jaryal
           </h5>
           <p className="mb-3 font-normal text-gray-700 ">
-            Ping a message, So we can understand your needs and Quickly take
-            needed action.
+            Ping a message, to become a part of our Bookclub and discuss about upcoming events
           </p>
 
           <a target="_blank" href="https://wa.me/qr/W77MEDT33RPON1">
