@@ -1,5 +1,4 @@
 import React from "react";
-import Payfile from "@/components/Payfile";
 
 const page = () => {
   return (
