@@ -23,7 +23,7 @@ const Payfile = ({imgscr,header,description,next,nextlink}:Props) => {
           <p className="mb-3 font-normal text-gray-700 ">
             {description} 
           </p>
-          <Link href={nextlink} className=" w-20 text-lg mt-2 font-medium text-super">{next}</Link>
+          <Link href={nextlink} className=" w-20 text-lg mt-2 font-medium text-green-600">{next}</Link>
         </div>
       </div>
     </div>
