@@ -63,6 +63,10 @@ export const quotes = [
     author: "Jhumpa Lahiri"
   },
   {
+    quote: "Books are bridges between the inaccessible past and the unknown future",
+    author: "Rahul Rathaur"
+  },
+  {
     quote: "There is no friend as loyal as a book.",
     author: "Ernest Hemingway"
   },
