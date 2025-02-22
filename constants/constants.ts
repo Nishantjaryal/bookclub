@@ -185,16 +185,46 @@ export const blogSheet = {
 
 export const resourcesData = {
   heading: "Bookscape Resource Sheet",
-  description: "Here at BookScape we focus on Teachings of books by dicussion and quizes that helps unlock a new dimension of self development and growth.",
-  posts:[
+  description:
+    "Here at BookScape we focus on Teachings of books by dicussion and quizes that helps unlock a new dimension of self development and growth.",
+  posts: [
     {
-      heading:"Book Benefits",
+      heading: "Book Benefits",
       state: "pdf", // docs || post || link || pdf || news || media || zip
-      description:"Reading books may have several physical and mental benefits. These include strengthening your brain, increasing your ability to empathize",
-      link:"https://www.crawshawacademy.org.uk/seecmsfile/?id=165"
-    }
-  ]
-}
+      description:
+        "Reading books may have several physical and mental benefits. These include strengthening your brain, increasing your ability to empathize",
+      link: "https://www.crawshawacademy.org.uk/seecmsfile/?id=165",
+    },
+    {
+      heading: "I don't love you anymore",
+      state: "pdf", // docs || post || link || pdf || news || media || zip
+      description:
+        "I Don't Love You Anymore is a book that'll feel like home to you. I promise it'll hold you gently on your worst days.",
+      link: "https://drive.google.com/file/d/1ql3UV3HazBzSVonOcNg_R9sC7978lWSK/view?usp=drive_link",
+    },
+    {
+      heading: "Welcome to the dead house",
+      state: "pdf", // docs || post || link || pdf || news || media || zip
+      description:
+        "The plot follows Amanda and Josh Benson, who move with their parents into a creepy old house ...",
+      link: "https://drive.google.com/file/d/1BqgqdklRlAx8WA1x6gUk_sKWdd2M-gY2/view?usp=drive_link",
+    },
+    {
+      heading: "The power of subconcious mind",
+      state: "pdf", // docs || post || link || pdf || news || media || zip
+      description:
+        "You can change your life just by feeling the reality of it within you in the now, it already exist within you and in this reality, because it's already here",
+      link: "https://drive.google.com/file/d/1PwOncVb1AwXSev7Cudm3QUogYGSkk3WU/view?usp=drive_link",
+    },
+    {
+      heading: "Vanka",
+      state: "pdf", // docs || post || link || pdf || news || media || zip
+      description:
+        "The story relates the plight of a nine-year-old orphan boy, Vanka, who has been apprenticed to a cobbler in Moscow",
+      link: "https://drive.google.com/file/d/1-lK9MZjHOssw6nvlbKukvPjznD5c8KyI/view?usp=drive_link",
+    },
+  ],
+};
 
 // ---------------------------------------------------------- CONTACT ----------------------------------------------------------
 
