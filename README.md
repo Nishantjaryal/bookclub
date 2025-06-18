@@ -5,6 +5,10 @@
 
 **Bookscape** is an all-in-one digital library platform created for college students to explore, read, and share knowledge. It features a curated collection of PDF books, insightful newsletters, and an authorization system managed by clerks. The site is built with **Next.js** for fast and scalable performance and styled with **Tailwind CSS** for a modern and interactive user experience.
 
+[![Link](https://img.shields.io/badge/Link-Primary-blue?style=flat&logo=Link)](https://bkscape.netlify.app/)
+[![Link](https://img.shields.io/badge/Link-Alternate-blue?style=flat&logo=Link)](https://bookclub-umber.vercel.app/)
+
+
 ---
 
 ## 🚀 Features
