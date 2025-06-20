@@ -41,7 +41,7 @@ https://github.com/Nishantjaryal/bookclub.git
 ```
 
 ```bash
-cd bookscape
+cd bookclub
 ```
 
 ```bash
